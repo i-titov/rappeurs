@@ -1,0 +1,225 @@
+/* Reset */
+@import url(/assets/style/reset.css);
+
+/* Fonts */
+@import url(/assets/style/fonts.css);
+:root{
+    --main-color: #f2851f;
+    --grey-color: #5c5c5c;
+    --grey-light-color: #a5a0a0a6;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Luckiest Guy', cursive;
+}
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 1.5em;
+    color: var(--grey-color);
+}
+h3{
+    font-size: 1.2em;
+    color: var(--main-color);
+}
+.my-1{
+    margin: 10px 0;
+}
+.my-2{
+    margin: 20px 0;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    background-image: url(/assets/img/fond.svg);
+}
+img{
+    max-width: 100%;
+}
+nav, #logo, nav ul{
+    display: flex;
+    align-items: center;
+}
+ul{
+    justify-content: space-between;
+}
+nav{
+    justify-content: space-around;
+    padding: 15px;
+}
+li{
+    text-transform: uppercase;
+}
+nav ul li {
+    color: var(--main-color);
+    font-weight: 600;
+    margin: 5px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+nav ul li:hover {
+    cursor: pointer;
+}
+section{
+    margin-bottom: 60px;
+}
+header{
+    min-height: 100px;
+}
+#logo>figure{
+    width: 50px;
+    margin: 0 15px;
+}
+#logo>figure:hover{
+transform: scale(1.1);
+}
+#logo h2 {
+    color: var(--grey-color);
+    margin-top: 5px;
+}
+#banner{
+    background-image: url(/assets/img/fond.gif);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+p, #rapeurs small,#banner .btn, #playlist span,#notice .btn-grey, #contact .btn-grey,#contact .btn-blue, footer article small{
+    font-family: 'Open Sans', sans-serif;
+}
+#banner article{
+    padding: 0 25px;
+}
+#banner h1, #banner .btn{
+    margin: 15px 0;
+}
+#banner .btn{
+    background: var(--main-color);
+}
+.btn{
+    padding: 10px 16px;
+    line-height: 1.5;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+}
+hr{
+    border: 3px solid var(--grey-light-color);
+}
+.title::before, .title::after{
+    content: ' ** ';
+} 
+#content{
+    padding: 0 35px;
+    text-align: center;
+}
+#rapeurs article{
+    padding: 20px;
+}
+#rapeurs article figure{
+    margin: 0 20px;
+}
+
+.d-flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    width: 60px;
+    height: 60px;
+    background: var(--grey-light-color);
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid var(--grey-color);
+}
+#playlist li{
+    padding: 15px;
+    line-height: 1.5;
+}
+.icon i {
+    color: var(--grey-color);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#notice h3 {
+    text-align: start;
+    margin-bottom: 10px;
+}
+#notice p img {
+    max-width: 50%;
+    float: left;
+}
+
+#notice article:nth-child(odd) img{
+    float: right;
+}
+#notice .btn-grey{
+    display: flex;
+}
+.btn-grey{
+    background: var(--grey-light-color);
+    color: white;
+}
+.btn-grey span{
+    margin: 0 5px;  
+    padding-bottom: 2px;
+}
+#contact .form-line {
+    display: flex;
+}
+#contact .form-control input{
+    border-radius: 20px;
+    border: 1px solid var(--grey-light-color);
+    padding-left: 40px;
+    min-height: 40px;
+}
+#contact .form-line .form-icon {
+    max-width: 26px;
+    position: absolute;
+    left: 9px;
+    top: 6px;
+}
+#contact .form-icon {
+    max-width: 26px;
+    position: absolute;
+    left: 9px;
+    top: 6px;
+}
+.form-line .form-control{
+    position: relative;
+    width: 50%;
+    margin: 0 3px;
+}
+.w-100{
+    width: 100%;
+}
+.p-relative{
+    position: relative;
+}
+.btn-blue{
+    background-color: #5c5ceb;
+    color: white;
+}
+footer{
+    background-color: var(--grey-color);
+    min-height: 80px;
+}
+footer article{
+    flex-direction: column;
+}
